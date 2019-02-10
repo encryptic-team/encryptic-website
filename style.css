@@ -1,0 +1,22 @@
+/* ----- Header ----- */
+header {
+  height: 600px;
+  width: auto;
+}
+
+.main-nav .logo-title {
+  float: left;
+}
+.main-nav .logo-title img {
+  width: 50px;
+  height: auto;
+  float: left;
+}
+.main-nav .logo-title p {
+  float: left;
+}
+.main-nav .menu {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
