@@ -52,7 +52,7 @@ header {
 .main-nav .logo-title p {
   float: left;
   font-family: "Major Mono Display", monospace;
-  line-height: 2;
+  line-height: 4;
 }
 .main-nav .menu {
   float: right;
@@ -132,7 +132,7 @@ header {
   height: 300px;
   width: 80%;
   left: 10%;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .info .left-column {
   margin-right: 100px;
@@ -191,6 +191,11 @@ header {
   position: relative;
   width: 90%;
   left: 10%;
+  padding-top: 50px;
+}
+.section__about .main__row img {
+  width: 60%;
+  margin-top: 90px;
 }
 .section__about .main__row h1 {
   font-family: "Major Mono Display", monospace;
@@ -204,6 +209,94 @@ header {
   font-size: 150%;
   color: white;
   line-height: 1.5;
+}
+
+/* ---- THIRD SECTION ---- */
+.section__markdown {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  align-content: center;
+}
+.section__markdown .main__row {
+  position: relative;
+  width: 90%;
+  left: 10%;
+  padding-top: 50px;
+}
+.section__markdown .main__row img {
+  width: 60%;
+  margin: 60px 0 0 100px;
+}
+.section__markdown .main__row h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 300%;
+  color: black;
+  margin: 80px 0 80px 0;
+  text-align: center;
+}
+.section__markdown .main__row h3 {
+  font-family: "Abel", sans-serif;
+  font-size: 150%;
+  color: black;
+  line-height: 1.5;
+}
+.section__markdown .main__row h3 .italic {
+  color: black;
+  font-style: italic;
+}
+.section__markdown .main__row h3 span {
+  color: red;
+}
+
+/* ---- FOURTH SECTION ---- */
+.section__contact-us {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  background-color: black;
+  align-content: center;
+}
+.section__contact-us .main__row {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.section__contact-us .main__row h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 300%;
+  color: white;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.section__contact-us .main__row h3 {
+  font-family: "Abel", sans-serif;
+  font-size: 150%;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.section__contact-us .main__row .contact-icons {
+  color: white;
+  font-size: 500%;
+  margin-top: 100px;
+}
+.section__contact-us .main__row .contact-icons a,
+.section__contact-us .main__row .contact-icons a:visited {
+  color: white;
+  text-decoration: none;
+}
+.section__contact-us .main__row .contact-icons .left-icon {
+  margin-left: 70px;
+}
+.section__contact-us .main__row .contact-icons .right-icon,
+.section__contact-us .main__row .contact-icons .left-icon {
+  transition: all 0.8s ease-in-out;
+}
+.section__contact-us .main__row .contact-icons .left-icon:hover,
+.section__contact-us .main__row .contact-icons .right-icon:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

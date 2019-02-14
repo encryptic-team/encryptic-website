@@ -57,7 +57,7 @@ header {
         p {
             float: left;
             font-family: $cryptic-font;
-            line-height: 2;
+            line-height: 4;
         }
     }
     .menu {
@@ -144,7 +144,7 @@ header {
     height: 300px;
     width: 80%;
     left: 10%;
-    margin-top: 150px;
+    margin-top: 200px;
 
     .left-column {
         margin-right: 100px;
@@ -201,7 +201,12 @@ header {
         position: relative;
         width: 90%;
         left: 10%;
-    
+        padding-top: 50px;
+        
+        img {
+            width: 60%;
+            margin-top: 90px;
+        }
         h1 {
             font-family: $cryptic-font;
             font-size: 300%;
@@ -220,8 +225,108 @@ header {
 }
 
 
+/* ---- THIRD SECTION ---- */
+
+.section__markdown {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    align-content: center;
+
+    .main__row {
+        position: relative;
+        width: 90%;
+        left: 10%;
+        padding-top: 50px;
+        
+        img {
+            width: 60%;
+            margin: 60px 0 0 100px;
+        }
+        h1 {
+            font-family: $cryptic-font;
+            font-size: 300%;
+            color: black;
+            margin: 80px 0 80px 0;
+            text-align: center;
+        }
+    
+        h3 {
+            font-family: $normal-font;
+            font-size: 150%;
+            color: black;
+            line-height: 1.5;
+
+            .italic {
+                color: black;
+                font-style: italic;
+            }
+
+            span {
+                color: red;
+            }
+        }
+
+    }
+}
 
 
+/* ---- FOURTH SECTION ---- */
+
+.section__contact-us {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    background-color: black;
+    align-content: center;
+
+    .main__row {
+        position: relative;
+        align-content: center;
+        text-align: center;
+        padding-top: 100px;
+        
+        h1 {
+            font-family: $cryptic-font;
+            font-size: 300%;
+            color: white;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+    
+        h3 {
+            font-family: $normal-font;
+            font-size: 150%;
+            color: white;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+
+        .contact-icons {
+            color: white;
+            font-size: 500%;
+            margin-top: 100px;
+
+            a,
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+
+            .left-icon { margin-left: 70px; }
+
+            .right-icon,
+            .left-icon {
+                transition: all .8s ease-in-out;
+            }
+
+            .left-icon:hover,
+            .right-icon:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
 
 
 
