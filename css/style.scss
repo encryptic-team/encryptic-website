@@ -3,6 +3,8 @@
 
 $cryptic-font: 'Major Mono Display', monospace;
 $normal-font: 'Abel', sans-serif;
+$title-font: 'Source Code Pro', monospace;
+
 
 /* ----------------------------------------------- */
 /* BASIC SETUP */
@@ -162,6 +164,32 @@ header {
         }
 
     }
+    .header-icons {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        height: 30px;
+        font-size: 200%;
+        margin-top: 150px;
+        left: 15%;
+        color: black;
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        }
+        40% {
+        transform: translateY(-30px);
+        }
+        60% {
+        transform: translateY(-15px);
+        }
+    }
 }
 
 /* ---- Type writer effect ---- */
@@ -194,7 +222,14 @@ header {
     height: 100vh;
     width: auto;
     margin: 0;
-    background-color: black;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ), url(img/background3.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     align-content: center;
 
     .main__row {
@@ -202,24 +237,27 @@ header {
         width: 90%;
         left: 10%;
         padding-top: 50px;
+
+        .right {
+            margin-left: 50px;
+        }
         
         img {
             width: 60%;
             margin-top: 90px;
         }
         h1 {
-            font-family: $cryptic-font;
+            font-family: $title-font;
             font-size: 300%;
             color: white;
             margin: 50px 0 80px 0;
-            text-align: center;
         }
     
         h3 {
             font-family: $normal-font;
             font-size: 150%;
             color: white;
-            line-height: 1.5;
+            line-height: 1.7;
         }
     }
 }
@@ -241,14 +279,14 @@ header {
         
         img {
             width: 60%;
-            margin: 60px 0 0 100px;
+            margin: 60px 0 0 150px;
+
         }
         h1 {
-            font-family: $cryptic-font;
+            font-family: $title-font;
             font-size: 300%;
             color: black;
             margin: 80px 0 80px 0;
-            text-align: center;
         }
     
         h3 {
@@ -326,6 +364,13 @@ header {
             }
         }
     }
+}
+
+
+/* ---- FOOTER---- */
+
+footer {
+    height: 100vh;
 }
 
 
