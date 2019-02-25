@@ -1,0 +1,384 @@
+
+/* ----- Reusable items ----*/
+
+$cryptic-font: 'Major Mono Display', monospace;
+$normal-font: 'Abel', sans-serif;
+$title-font: 'Source Code Pro', monospace;
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #000;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ----- Header ----- 3373 */
+header {
+    height: 100vh;
+    width: auto;
+}
+
+
+/* ---- Top Menu ---- */
+.main-nav {
+    position: absolute;
+    width: 90%;
+    left: 8%;
+    top: 3%;
+    
+    .logo-title {
+        float: left;
+
+        img {
+            width: 50px;
+            height: auto;
+            float: left;
+        }
+        p {
+            float: left;
+            font-family: $cryptic-font;
+            line-height: 4;
+        }
+    }
+    .menu {
+        float: right;
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+        }
+        ul {
+            width: 100%;
+            list-style-type: none;
+            a {
+                padding: 0.5em 0.8em;
+                margin: 0.2em 0;
+                display: block;
+                color: black;
+                position: relative;
+                text-decoration: none;
+            }
+            li {
+                float: left;
+                font-family: $normal-font;
+                font-size: 120%;
+                overflow: hidden;
+                list-style: outside none none;
+                margin: 0 1em;
+                padding: 0;
+                -webkit-transition: all 0.35s ease;
+                transition: all 0.35s ease;
+            }
+
+            a:before,
+            a:after {
+                height: 14px;
+                width: 14px;
+                position: absolute;
+                content: '';
+                -webkit-transition: all 0.35s ease;
+                transition: all 0.35s ease;
+                opacity: 0;
+            }
+
+            a:before {
+                left: 0;
+                top: 0;
+                border-left: 2px solid black;
+                border-top: 2px solid black;
+                -webkit-transform: translate(100%, 50%);
+                transform: translate(100%, 50%);
+            }
+
+            a:after {
+                right: 0;
+                bottom: 0;
+                border-right: 2px solid black;
+                border-bottom: 2px solid black;
+                -webkit-transform: translate(-100%, -50%);
+                transform: translate(-100%, -50%);
+            }
+
+            a:hover,
+            .current a {
+                color: black;
+            }
+
+            a:hover:before,
+            .current a:before,
+            a:hover:after,
+            .current a:after {
+                -webkit-transform: translate(0%, 0%);
+                transform: translate(0%, 0%);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* ---- Text in the header ---- */
+.info {
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 80%;
+    left: 10%;
+    margin-top: 200px;
+
+    .left-column {
+        margin-right: 100px;
+        h1 {
+            font-family: $cryptic-font;
+            line-height: 1.3;
+        }
+    }
+    .right-column {
+        position: relative;
+        padding: 50px 0 0 50px;
+        h3 {
+            font-family: $cryptic-font;
+            line-height: 1.3;
+        }
+
+    }
+    .header-icons {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        height: 30px;
+        font-size: 200%;
+        margin-top: 150px;
+        left: 15%;
+        color: black;
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        }
+        40% {
+        transform: translateY(-30px);
+        }
+        60% {
+        transform: translateY(-15px);
+        }
+    }
+}
+
+/* ---- Type writer effect ---- */
+
+.line-1{
+    position: relative; 
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 700ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 23em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
+}
+
+
+/* ---- SECOND SECTION ---- */
+
+.section__about {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ), url(img/background3.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-content: center;
+
+    .main__row {
+        position: relative;
+        width: 90%;
+        left: 10%;
+        padding-top: 50px;
+
+        .right {
+            margin-left: 50px;
+        }
+        
+        img {
+            width: 60%;
+            margin-top: 90px;
+        }
+        h1 {
+            font-family: $title-font;
+            font-size: 300%;
+            color: white;
+            margin: 50px 0 80px 0;
+        }
+    
+        h3 {
+            font-family: $normal-font;
+            font-size: 150%;
+            color: white;
+            line-height: 1.7;
+        }
+    }
+}
+
+
+/* ---- THIRD SECTION ---- */
+
+.section__markdown {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    align-content: center;
+
+    .main__row {
+        position: relative;
+        width: 90%;
+        left: 10%;
+        padding-top: 50px;
+        
+        img {
+            width: 60%;
+            margin: 60px 0 0 150px;
+
+        }
+        h1 {
+            font-family: $title-font;
+            font-size: 300%;
+            color: black;
+            margin: 80px 0 80px 0;
+        }
+    
+        h3 {
+            font-family: $normal-font;
+            font-size: 150%;
+            color: black;
+            line-height: 1.5;
+
+            .italic {
+                color: black;
+                font-style: italic;
+            }
+
+            span {
+                color: red;
+            }
+        }
+
+    }
+}
+
+
+/* ---- FOURTH SECTION ---- */
+
+.section__contact-us {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    background-color: black;
+    align-content: center;
+
+    .main__row {
+        position: relative;
+        align-content: center;
+        text-align: center;
+        padding-top: 100px;
+        
+        h1 {
+            font-family: $cryptic-font;
+            font-size: 300%;
+            color: white;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+    
+        h3 {
+            font-family: $normal-font;
+            font-size: 150%;
+            color: white;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
+
+        .contact-icons {
+            color: white;
+            font-size: 500%;
+            margin-top: 100px;
+
+            a,
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+
+            .left-icon { margin-left: 70px; }
+
+            .right-icon,
+            .left-icon {
+                transition: all .8s ease-in-out;
+            }
+
+            .left-icon:hover,
+            .right-icon:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+/* ---- FOOTER---- */
+
+footer {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+

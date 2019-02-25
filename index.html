@@ -9,9 +9,13 @@
         <link rel="shortcut icon" type="image/png" href="img/encryptic-web-transparent.png">
 
         <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
-        <link rel = "stylesheet" type = "text/css" href = "grid.css">
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+        <link rel = "stylesheet" type = "text/css" href = "css/grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     </head>
 
@@ -24,12 +28,13 @@
                     <img src="img/encryptic-web-transparent.png">
                     <p>Encryptic</p>
                 </div>
-
+                
                 <div class="menu">
                     <ul>
-                        <a href="https://app.encryptic.org/"><li class="first">Try Encriptic (Alpha)</li></a>
-                        <a href="https://github.com/encryptic-team/encryptic/releases"><li class="second">Downloads</li></a>
-                        <a href="https://github.com/encryptic-team/encryptic"><li class="third">GitHub</li></a>
+                        <li><a href="https://app.encryptic.org/" class="current" data-hover="miE NjAhTfyQz 9cNtTkr">Try Encryptic (Alpha)</a></li>
+                        <li><a href="about-us.html" class="" data-hover="3tHfy 0t">About us</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic/releases" class="" data-hover="7oCWH+w=P">Downloads</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic" class="" data-hover="Tfy=gF">GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,17 +58,91 @@
                             Being watched is for the birds.
                     </h3>
                                     
-
-
                 </div>
+
+                <a href="#about"><div class="header-icons">
+                    <ion-icon name="arrow-down" class="icon bounce"></ion-icon>
+                </div></a>
+                
             </div>
         </header>
 
+        <!-- ------ SECOND SECTION ------ -->
+        <section class="section__about" id="about">
+
+            <div class="main__row">
+
+                <div class="col span-1-of-2">
+                    
+                </div>
+
+                <div class="col span-1-of-3 right">
+                    <h1>How it works</h1>
+
+                    <h3>When you use our site, you run the app directly through your browser. Anything you write is stored in your browser’s cache using industry standard encryption methods. This means it’s kept safe, and by default never even leaves your computer.</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------ THIRD SECTION ------ -->
+        <section class="section__markdown">
+            <div class="main__row">
+
+                <div class="col span-1-of-3">
+                    <h1># Markdown</h1>
+
+                    <h3>Encryptic uses the Markdown formatting syntax for its notes so you can spend more time writing, and less time worrying about making things <span class="italic">*italic*</span>, or <span>```worrying about how to format your code.```</span></h3>
+                </div>
+
+                <div class="main__row">
+                    <div class="col span-1-of-2">
+                        <img src="img/typewriter.svg" alt="old school typewriter">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------ FOURTH SECTION ------ -->
+        <section class="section__contact-us">
+                <div class="main__row">
+                    <h1>Contact us</h1>
+
+                    <h3>Found a bug?  Have a question? Want to let us know how you really feel?</h3>
+
+                    <h3>Don't hesitate, we want to hear everything you want to say. Everything.</h3>
+
+                    <div class="contact-icons">
+                        <a href="mailto: brad.arnett@gmail.com"><ion-icon name="mail" class="right-icon"></ion-icon></a>
+                        <a href="https://github.com/encryptic-team/encryptic/issues"><ion-icon name="logo-github" class="left-icon"></ion-icon></a>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <footer>
 
 
 
+        </footer>
+
+
+
+    <!--To add in the footer: 
+    <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    Photo by Pankaj Patel on Unsplash 
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pankajpatel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pankaj Patel"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pankaj Patel</span></a>
+    
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@markusspiske?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Markus Spiske"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Markus Spiske</span></a>-->
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
