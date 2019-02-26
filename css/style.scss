@@ -231,6 +231,7 @@ header {
     -o-background-size: cover;
     background-size: cover;
     align-content: center;
+    overflow: hidden;
 
     .main__row {
         position: relative;
@@ -239,7 +240,7 @@ header {
         padding-top: 50px;
 
         .right {
-            margin-left: 50px;
+            margin-left: 0;
         }
         
         img {
@@ -273,13 +274,14 @@ header {
 
     .main__row {
         position: relative;
-        width: 90%;
-        left: 10%;
+        width: auto;
         padding-top: 50px;
+        margin: 0 30px;
+        text-align: center;
         
         img {
             width: 60%;
-            margin: 60px 0 0 150px;
+            margin: 150px 0 0 50px;
 
         }
         h1 {
