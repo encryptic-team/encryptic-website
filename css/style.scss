@@ -240,7 +240,7 @@ header {
         padding-top: 50px;
 
         .right {
-            margin-left: 0;
+            margin-left: 50px;
         }
         
         img {
@@ -281,7 +281,7 @@ header {
         
         img {
             width: 60%;
-            margin: 150px 0 0 50px;
+            margin-top: 150px;
 
         }
         h1 {
@@ -307,6 +307,14 @@ header {
             }
         }
 
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: rgb(53, 83, 146);
+            font-weight: 700;
+            
+        }
+
     }
 }
 
@@ -314,7 +322,7 @@ header {
 /* ---- FOURTH SECTION ---- */
 
 .section__contact-us {
-    height: 100vh;
+    height: auto;
     width: auto;
     margin: 0;
     background-color: black;

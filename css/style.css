@@ -223,7 +223,7 @@ header {
   padding-top: 50px;
 }
 .section__about .main__row .right {
-  margin-left: 0;
+  margin-left: 50px;
 }
 .section__about .main__row img {
   width: 60%;
@@ -258,7 +258,7 @@ header {
 }
 .section__markdown .main__row img {
   width: 60%;
-  margin: 150px 0 0 50px;
+  margin-top: 150px;
 }
 .section__markdown .main__row h1 {
   font-family: "Source Code Pro", monospace;
@@ -279,10 +279,16 @@ header {
 .section__markdown .main__row h3 span {
   color: red;
 }
+.section__markdown .main__row a:link,
+.section__markdown .main__row a:visited {
+  text-decoration: none;
+  color: #355392;
+  font-weight: 700;
+}
 
 /* ---- FOURTH SECTION ---- */
 .section__contact-us {
-  height: 100vh;
+  height: auto;
   width: auto;
   margin: 0;
   background-color: black;
