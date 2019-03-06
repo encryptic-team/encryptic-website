@@ -1,0 +1,172 @@
+/* ----- Reusable items ----*/
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #000;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+header {
+  height: 200px;
+  width: auto;
+}
+
+/* ---- Top Menu ---- */
+.main-nav {
+  position: absolute;
+  width: 90%;
+  left: 8%;
+  top: 3%;
+}
+.main-nav a {
+  text-decoration: none;
+  color: black;
+}
+.main-nav .logo-title {
+  float: left;
+}
+.main-nav .logo-title img {
+  width: 50px;
+  height: auto;
+  float: left;
+}
+.main-nav .logo-title p {
+  float: left;
+  font-family: "Major Mono Display", monospace;
+  line-height: 4;
+}
+.main-nav .menu {
+  float: right;
+}
+.main-nav .menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.main-nav .menu ul {
+  width: 100%;
+  list-style-type: none;
+}
+.main-nav .menu ul a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+.main-nav .menu ul li {
+  float: left;
+  font-family: "Abel", sans-serif;
+  font-size: 120%;
+  overflow: hidden;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.main-nav .menu ul a:before,
+.main-nav .menu ul a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.main-nav .menu ul a:before {
+  left: 0;
+  top: 0;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.main-nav .menu ul a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.main-nav .menu ul a:hover,
+.main-nav .menu ul .current a {
+  color: black;
+}
+.main-nav .menu ul a:hover:before,
+.main-nav .menu ul .current a:before,
+.main-nav .menu ul a:hover:after,
+.main-nav .menu ul .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* ----------------------------------------------- */
+/* INFO */
+/* ----------------------------------------------- */
+.full_info {
+  position: relative;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 100px;
+}
+.full_info .big_title {
+  text-align: center;
+  font-family: "Major Mono Display", monospace;
+  font-size: 200%;
+  margin-bottom: 100px;
+}
+.full_info .full_info-text {
+  font-family: "Abel", sans-serif;
+}
+.full_info .full_info-text h1 {
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 30px;
+  font-size: 180%;
+}
+.full_info .full_info-text h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+.full_info .full_info-text h3 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 100%;
+  margin-bottom: 10px;
+}
+.full_info .full_info-text p {
+  font-size: 120%;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

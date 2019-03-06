@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encryptic</title>
+        <meta name="description" content="Encryptic - Being watched is for the birds">
+        <link rel="shortcut icon" type="image/png" href="img/encryptic-web-transparent.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+        <link rel = "stylesheet" type = "text/css" href = "css/about-page/style.css">
+
+    </head>
+
+
+    <body>
+
+        <header>
+            <a href="./index.html"><div class="main-nav">
+                <div class="logo-title">
+                    <img src="img/encryptic-web-transparent.png">
+                    <p>Encryptic</p>
+                </div>
+            </a> 
+                
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
+                        <li><a href="./about.html" class="">About us</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic/releases" class="">Downloads</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="full_info">
+
+            <div class="big_title">
+                <h1>About Encryptic</h1>
+            </div>
+
+            <div class="full_info-text">
+                    <h1>Background / Overview</h1>
+                    <p>Encryptic is based on the Laverna Project. Around early 2018, the Laverna project stopped being maintained in spite of a devout userbase. The dev branch was forked and that became Encryptic. The aims of Encryptic are to continue the work and spirit of the original Laverna project.
+                    
+                    Almost everything in Encryptic is handled by static files serving browser based javascript. Node is currently only used to provide a webserver (and in the case of electron, a windowed application). You can take the files and static host on any webserver you want.
+                    
+                    All storage is done in your browser's IndexedDB (or LocalStorage as a failback). This means that data doesn't leave your computer unless you have one of the sync options configured.
+                    
+                    Encryptic supports export/import of data to/from your hard drive for backup and transfer purposes.</p>
+                    
+                    <h1>Features</h1>
+
+                    <h2>Encryption</h2>
+
+                    <h3>Summary</h3>
+                    <p>Encryption is done by the openpgpjs library. Upon registering a user in Encryptic, the software will generate you a 2048 bit pgp key with the passphrase set to whatever you typed in during user creation. After this is generated you will be presented with a download for it. This key is stored in your IndexedDB as well, though there is no convenient means of extracting it. Save this key because without it recovering your notes will be impossible.</p>
+                    
+                    <h3>Security Considerations</h3>
+                    <p>Your private key is stored in your browser, so that means anyone with access to your browser or app data can view it. However, your passphrase is never stored anywhere (this also means that there's no way to recover it if you forget it).
+                    
+                    In the options menu there is a section that allows you to wipe the current users. This will remove all notes and the private key from the IndexedDB.
+                    
+                    Encryptic (or pretty much anything else for that matter) cannot protect you from a compromised browser or computer. If you cannot trust the device you are writing on, you should not be writing on it.</p>
+                    
+                    <h2>Synchronization</h2>
+                    <p>Optionally, multiple device synchronization can be handled through Encryptic. This can be done through Dropbox, though other services will be added in the future. Data is still encrypted before it is sent to any service, so the provider of the service should not have access to the contents of your files. Your private key is NOT synchronized to any service.</p>
+            </div>
+        </section>
+
+    </body>
+</html>

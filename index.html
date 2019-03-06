@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
 
-        <link rel = "stylesheet" type = "text/css" href = "css/grid.css">
-        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/main-page/grid.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/main-page/style.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     </head>
@@ -22,7 +22,7 @@
 
     <body>
 
-        <header>
+        <header id="header">
             <div class="main-nav">
                 <div class="logo-title">
                     <img src="img/encryptic-web-transparent.png">
@@ -31,10 +31,10 @@
                 
                 <div class="menu">
                     <ul>
-                        <li><a href="https://app.encryptic.org/" class="current" data-hover="miE NjAhTfyQz 9cNtTkr">Try Encryptic (Alpha)</a></li>
-                        <li><a href="about-us.html" class="" data-hover="3tHfy 0t">About us</a></li>
-                        <li><a href="https://github.com/encryptic-team/encryptic/releases" class="" data-hover="7oCWH+w=P">Downloads</a></li>
-                        <li><a href="https://github.com/encryptic-team/encryptic" class="" data-hover="Tfy=gF">GitHub</a></li>
+                        <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
+                        <li><a href="./about.html" class="">About us</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic/releases" class="">Downloads</a></li>
+                        <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,28 +92,31 @@
         <section class="section__markdown">
 
             <div class="main__row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-2 col__left">
                     <h1># Markdown</h1>
 
-                    <h3>Encryptic uses the Markdown formatting syntax for its notes so you can spend more time writing, and less time worrying about making things <span class="italic">*italic*</span>, or <span>```worrying about how to format your code.```</span></h3>
+                    <h3>Encryptic uses the Markdown formatting syntax for its notes so you can spend more time writing, and less time worrying about making things <span class="italic">*italic*</span>.</h3>
                 </div>
 
 
-                    <div class="col span-1-of-3">
-                        <img src="img/web-design.png" alt="writing on a screen">
-                    </div>
-
-
-                    <div class="col span-1-of-3">
-                        <h1>More info #</h1>
-
-                        <h3>Markdown is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats.</h3>
-
-                        <h3>Learn more on the <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia page</a>.</h3>
-                    </div>
-
-
+                <div class="col span-1-of-2">
+                    <img src="img/screenrecord-1.gif" alt="screenrecord of the editing">
+                </div>
             </div>
+
+            <div class="main__row second-row">
+                <div class="col span-1-of-2">
+                    <img src="img/screenrecord-2.gif" alt="screenrecord of the editing">
+                </div>
+
+                <div class="col span-1-of-2 col__right">
+                    <h1># To-do list</h1>
+
+                    <h3>Encryptic gives you the possibility to create to-do lists. We also included a progress bar so you can really see how much you have left to reach your goal.</h3>
+                </div>
+            </div>
+
+
         </section>
 
         <!-- ------ FOURTH SECTION ------ -->
@@ -135,20 +138,33 @@
 
 
         <footer>
+            <div class="menu">
+                <ul>
+                    <li><a href="#header" class="current">Back to top</a></li>
+                    <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
+                    <li><a href="/about-us.html" class="">About us</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic/releases" class=""">Downloads</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
+                </ul>
+            </div>
 
+            <div class="join_us">
+                <a target="_blank" href="https://github.com/encryptic-team/encryptic#developer-install--documentation"><img src="img/encryptic-web-transparent.png"></a>
+                <br>
+                <h1>Join us! Become an Encryptic developer!</h1>
+            </div>
+ 
+            <div class="thank_you--section">
+                <div class="photo__thank">
+                    Main photo in first section by Pankaj Patel on Unsplash 
+                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block; border-radius:3px;" href="https://unsplash.com/@pankajpatel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pankaj Patel"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pankaj Patel</span></a>
+                </div>
+            </div>
+            
+                
 
 
         </footer>
-
-
-
-    <!--To add in the footer: 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    Photo by Pankaj Patel on Unsplash 
-    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pankajpatel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pankaj Patel"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pankaj Patel</span></a>
-    
-    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@markusspiske?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Markus Spiske"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Markus Spiske</span></a>-->
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

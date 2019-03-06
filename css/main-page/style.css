@@ -28,9 +28,9 @@ body {
   visibility: hidden;
 }
 
-/* ----- Header ----- 3373 */
+/* ----- Header ----- */
 header {
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
 }
 
@@ -205,7 +205,7 @@ header {
 }
 /* ---- SECOND SECTION ---- */
 .section__about {
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background3.jpg) no-repeat center center;
@@ -244,27 +244,33 @@ header {
 
 /* ---- THIRD SECTION ---- */
 .section__markdown {
-  height: 100vh;
+  display: inline-block;
+  height: auto;
   width: auto;
-  margin: 0;
+  margin-left: 20px;
   align-content: center;
 }
 .section__markdown .main__row {
-  position: relative;
+  display: inline-block;
   width: auto;
+  height: auto;
   padding-top: 50px;
-  margin: 0 30px;
+  margin-top: 10px;
   text-align: center;
 }
+.section__markdown .main__row .col__left {
+  padding: 40px 10px;
+}
 .section__markdown .main__row img {
-  width: 60%;
-  margin-top: 150px;
+  width: 90%;
+  margin-top: 30px;
+  box-shadow: 10px 10px 10px #646464;
 }
 .section__markdown .main__row h1 {
   font-family: "Source Code Pro", monospace;
   font-size: 300%;
   color: black;
-  margin: 80px 0 80px 0;
+  margin: 30px 0;
 }
 .section__markdown .main__row h3 {
   font-family: "Abel", sans-serif;
@@ -279,32 +285,33 @@ header {
 .section__markdown .main__row h3 span {
   color: red;
 }
-.section__markdown .main__row a:link,
-.section__markdown .main__row a:visited {
-  text-decoration: none;
-  color: #355392;
-  font-weight: 700;
+.section__markdown .second-row {
+  margin-bottom: 50px;
+}
+.section__markdown .second-row .col__right {
+  padding: 50px 20px 0 20px;
 }
 
 /* ---- FOURTH SECTION ---- */
 .section__contact-us {
-  height: auto;
+  min-height: 50vh;
   width: auto;
   margin: 0;
   background-color: black;
   align-content: center;
+  padding-bottom: 50px;
 }
 .section__contact-us .main__row {
   position: relative;
   align-content: center;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .section__contact-us .main__row h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 300%;
   color: white;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   text-align: center;
 }
 .section__contact-us .main__row h3 {
@@ -312,12 +319,12 @@ header {
   font-size: 150%;
   color: white;
   line-height: 1.5;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .section__contact-us .main__row .contact-icons {
   color: white;
   font-size: 500%;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .section__contact-us .main__row .contact-icons a,
 .section__contact-us .main__row .contact-icons a:visited {
@@ -338,7 +345,103 @@ header {
 
 /* ---- FOOTER---- */
 footer {
-  height: 100vh;
+  position: relative;
+  min-height: 50vh;
+}
+footer .menu {
+  position: relative;
+  width: 80%;
+  left: 20%;
+  margin: 50px 0;
+}
+footer .menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+footer .menu ul {
+  width: 100%;
+  list-style-type: none;
+}
+footer .menu ul a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+footer .menu ul li {
+  float: left;
+  font-family: "Abel", sans-serif;
+  font-size: 120%;
+  overflow: hidden;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+footer .menu ul a:before,
+footer .menu ul a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+footer .menu ul a:before {
+  left: 0;
+  top: 0;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+footer .menu ul a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+footer .menu ul a:hover,
+footer .menu ul .current a {
+  color: black;
+}
+footer .menu ul a:hover:before,
+footer .menu ul .current a:before,
+footer .menu ul a:hover:after,
+footer .menu ul .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+footer .join_us {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+footer .join_us img {
+  width: 10%;
+}
+footer .join_us h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 150%;
+}
+footer .thank_you--section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 10px 10px 0;
+  font-family: "Abel", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
