@@ -135,7 +135,7 @@ header {
   margin-top: 200px;
 }
 .info .left-column {
-  margin-right: 100px;
+  margin-right: 200px;
 }
 .info .left-column h1 {
   font-family: "Major Mono Display", monospace;
@@ -152,11 +152,11 @@ header {
 .info .header-icons {
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 100%;
+  text-align: center;
   height: 30px;
   font-size: 200%;
-  margin-top: 150px;
-  left: 15%;
+  margin-top: 50px;
   color: black;
 }
 .info .bounce {
@@ -174,7 +174,7 @@ header {
   }
 }
 
-/* ---- Type writer effect ---- */
+/* Type writer effect */
 .line-1 {
   position: relative;
   border-right: 2px solid black;
@@ -282,9 +282,6 @@ header {
   color: black;
   font-style: italic;
 }
-.section__markdown .main__row h3 span {
-  color: red;
-}
 .section__markdown .second-row {
   margin-bottom: 50px;
 }
@@ -348,23 +345,25 @@ footer {
   position: relative;
   min-height: 50vh;
 }
-footer .menu {
-  position: relative;
-  width: 80%;
-  left: 20%;
-  margin: 50px 0;
+footer .outer_menu {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
 }
-footer .menu * {
+footer .outer_menu .menu {
+  display: inline-block;
+}
+footer .outer_menu .menu * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-footer .menu ul {
+footer .outer_menu .menu ul {
   width: 100%;
   list-style-type: none;
 }
-footer .menu ul a {
+footer .outer_menu .menu ul a {
   padding: 0.5em 0.8em;
   margin: 0.2em 0;
   display: block;
@@ -372,7 +371,7 @@ footer .menu ul a {
   position: relative;
   text-decoration: none;
 }
-footer .menu ul li {
+footer .outer_menu .menu ul li {
   float: left;
   font-family: "Abel", sans-serif;
   font-size: 120%;
@@ -383,8 +382,8 @@ footer .menu ul li {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-footer .menu ul a:before,
-footer .menu ul a:after {
+footer .outer_menu .menu ul a:before,
+footer .outer_menu .menu ul a:after {
   height: 14px;
   width: 14px;
   position: absolute;
@@ -393,7 +392,7 @@ footer .menu ul a:after {
   transition: all 0.35s ease;
   opacity: 0;
 }
-footer .menu ul a:before {
+footer .outer_menu .menu ul a:before {
   left: 0;
   top: 0;
   border-left: 2px solid black;
@@ -401,7 +400,7 @@ footer .menu ul a:before {
   -webkit-transform: translate(100%, 50%);
   transform: translate(100%, 50%);
 }
-footer .menu ul a:after {
+footer .outer_menu .menu ul a:after {
   right: 0;
   bottom: 0;
   border-right: 2px solid black;
@@ -409,14 +408,14 @@ footer .menu ul a:after {
   -webkit-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
-footer .menu ul a:hover,
-footer .menu ul .current a {
+footer .outer_menu .menu ul a:hover,
+footer .outer_menu .menu ul .current a {
   color: black;
 }
-footer .menu ul a:hover:before,
-footer .menu ul .current a:before,
-footer .menu ul a:hover:after,
-footer .menu ul .current a:after {
+footer .outer_menu .menu ul a:hover:before,
+footer .outer_menu .menu ul .current a:before,
+footer .outer_menu .menu ul a:hover:after,
+footer .outer_menu .menu ul .current a:after {
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   opacity: 1;
@@ -428,6 +427,7 @@ footer .join_us {
   width: 50%;
   margin-left: 25%;
   margin-top: 50px;
+  line-height: 1.4;
 }
 footer .join_us img {
   width: 10%;

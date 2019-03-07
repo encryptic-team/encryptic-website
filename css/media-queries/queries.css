@@ -1,0 +1,307 @@
+/* Large screens */
+@media only screen and (min-width: 1903px) {
+  /* ----- Header ----- */
+  .main-nav .menu ul li {
+    font-size: 170%;
+  }
+
+  .info {
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 80%;
+    left: 10%;
+    margin-top: 200px;
+  }
+  .info .left-column {
+    margin-right: 200px;
+  }
+  .info .left-column h1 {
+    font-size: 300%;
+    line-height: 1.5;
+  }
+  .info .right-column h3 {
+    font-size: 200%;
+    line-height: 1.8;
+  }
+  .info .header-icons {
+    font-size: 300%;
+    margin-top: 100px;
+  }
+
+  .section__about .main__row h1 {
+    font-size: 400%;
+  }
+  .section__about .main__row h3 {
+    font-size: 250%;
+  }
+
+  .section__markdown .main__row .col__left {
+    padding: 100px 100px 0 100px;
+  }
+  .section__markdown .main__row h3 {
+    font-size: 200%;
+  }
+}
+/* Big tablets to 1200px (width smaller than the 1140px row) */
+/* Small tablets to big tablets */
+@media only screen and (max-width: 1023px) {
+  .logo-title {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* HAMBURGER MENU */
+  #menuToggle {
+    display: inline-block;
+    opacity: 1;
+  }
+
+  #menu {
+    opacity: 1;
+    margin: -100px 0 0 -300px;
+  }
+
+  /* ------------------ */
+  /* HEADER INFOS */
+  header {
+    min-height: auto;
+    width: auto;
+  }
+
+  .info {
+    height: auto;
+    width: 100%;
+    left: 0;
+    padding: 0 30px;
+  }
+  .info .left-column {
+    margin-right: 170px;
+  }
+  .info .left-column h1 {
+    font-size: 250%;
+  }
+  .info .right-column h3 {
+    line-height: 1.6;
+    font-size: 140%;
+  }
+  .info .anim-typewriter {
+    display: none;
+  }
+  .info .header-icons {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+
+  /* HOW IT WORKS */
+  .section__about .main__row {
+    position: relative;
+    height: auto;
+    width: auto;
+    left: 0;
+    padding: 30px 0;
+  }
+  .section__about .main__row .span-1-of-2 {
+    display: none;
+  }
+  .section__about .main__row .right {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 50px;
+    margin-bottom: 30px;
+  }
+  .section__about .main__row h1 {
+    margin: 150px 0;
+    text-align: center;
+    font-size: 400%;
+  }
+  .section__about .main__row h3 {
+    font-size: 250%;
+  }
+
+  /* SECTION WITH SCREENSHOTS */
+  .section__markdown {
+    margin-left: 0;
+  }
+  .section__markdown .main__row .for_mobile {
+    display: inline-block;
+  }
+  .section__markdown .main__row .not_for_mobile {
+    display: none;
+  }
+  .section__markdown .main__row img {
+    margin-top: 60px;
+  }
+  .section__markdown .main__row h1 {
+    margin: 0 0 20px 0;
+    font-size: 250%;
+  }
+  /* FOOTER */
+  footer {
+    padding-top: 30px;
+  }
+  footer .outer_menu {
+    display: none;
+  }
+  footer .outer_menu .menu {
+    display: none;
+  }
+  footer .join_us {
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+  }
+  footer .join_us img {
+    width: 20%;
+    margin-top: 80px;
+  }
+  footer .join_us h1 {
+    font-size: 250%;
+  }
+  /* ----- ABOUT PAGE ----- */
+  .full_info {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .full_info .full_info-text h1 {
+    font-size: 200%;
+  }
+  .full_info .full_info-text h2 {
+    font-size: 140%;
+  }
+  .full_info .full_info-text h3 {
+    font-size: 120%;
+  }
+  .full_info .full_info-text p {
+    font-size: 140%;
+  }
+}
+/* Small phones to small tablets */
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .logo-title {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* HAMBURGER MENU */
+  #menuToggle {
+    display: inline-block;
+    opacity: 1;
+  }
+
+  #menu {
+    opacity: 1;
+    margin: -100px 0 0 -250px;
+  }
+
+  /* ------------------ */
+  /* HEADER INFOS */
+  .info {
+    height: auto;
+  }
+  .info .left-column {
+    margin: 0px 0px 50px 0px;
+  }
+  .info .left-column h1 {
+    font-size: 200%;
+  }
+  .info .right-column {
+    position: relative;
+    padding: 0;
+  }
+  .info .right-column h3 {
+    font-size: 100%;
+  }
+  .info .anim-typewriter {
+    display: none;
+  }
+  .info .header-icons {
+    display: none;
+  }
+
+  /* HOW IT WORKS */
+  .section__about .main__row {
+    position: relative;
+    height: auto;
+    width: auto;
+    left: 0;
+    padding: 30px 0;
+  }
+  .section__about .main__row .span-1-of-2 {
+    display: none;
+  }
+  .section__about .main__row .right {
+    margin-left: 0;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .section__about .main__row h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 300%;
+  }
+  .section__about .main__row h3 {
+    font-size: 150%;
+  }
+
+  /* SECTION WITH SCREENSHOTS */
+  .section__markdown {
+    margin-left: 0;
+  }
+  .section__markdown .main__row .for_mobile {
+    display: inline-block;
+  }
+  .section__markdown .main__row .not_for_mobile {
+    display: none;
+  }
+  .section__markdown .main__row img {
+    margin-top: 10px;
+  }
+  .section__markdown .main__row h1 {
+    margin-top: 10px;
+  }
+  /* CONTACT US */
+  .section__contact-us {
+    padding: 0 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-top: 30px;
+  }
+  footer .outer_menu {
+    display: none;
+  }
+  footer .outer_menu .menu {
+    display: none;
+  }
+  footer .join_us {
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+  }
+  footer .join_us img {
+    width: 20%;
+    margin-top: 10px;
+  }
+  footer .join_us h1 {
+    font-size: 150%;
+  }
+  /* ----- ABOUT PAGE ----- */
+  .full_info .big_title {
+    font-size: 150%;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */

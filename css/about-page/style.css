@@ -139,6 +139,7 @@ header {
   width: 60%;
   margin-left: 20%;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .full_info .big_title {
   text-align: center;

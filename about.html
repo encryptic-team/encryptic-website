@@ -12,7 +12,10 @@
         <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
+        <link rel = "stylesheet" type = "text/css" href = "css/hamburger-nav.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel = "stylesheet" type = "text/css" href = "css/about-page/style.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/media-queries/queries.css">
 
     </head>
 
@@ -26,15 +29,32 @@
                     <p>Encryptic</p>
                 </div>
             </a> 
-                
-                <div class="menu">
-                    <ul>
-                        <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
-                        <li><a href="./about.html" class="">About us</a></li>
-                        <li><a href="https://github.com/encryptic-team/encryptic/releases" class="">Downloads</a></li>
-                        <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
+
+            <nav role="navigation">
+                <div id="menuToggle">
+
+                    <input type="checkbox" />
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                    <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
+                    <li><a href="./about.html" class="">About us</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic/releases" class="">Downloads</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
                     </ul>
                 </div>
+            </nav>
+                
+            <div class="menu">
+                <ul>
+                    <li><a href="https://app.encryptic.org/" class="current">Try Encryptic (Alpha)</a></li>
+                    <li><a href="./about.html" class="">About us</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic/releases" class="">Downloads</a></li>
+                    <li><a href="https://github.com/encryptic-team/encryptic" class="">GitHub</a></li>
+                </ul>
             </div>
         </header>
 
@@ -45,6 +65,7 @@
             </div>
 
             <div class="full_info-text">
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <h1>Background / Overview</h1>
                     <p>Encryptic is based on the Laverna Project. Around early 2018, the Laverna project stopped being maintained in spite of a devout userbase. The dev branch was forked and that became Encryptic. The aims of Encryptic are to continue the work and spirit of the original Laverna project.
                     
@@ -53,7 +74,8 @@
                     All storage is done in your browser's IndexedDB (or LocalStorage as a failback). This means that data doesn't leave your computer unless you have one of the sync options configured.
                     
                     Encryptic supports export/import of data to/from your hard drive for backup and transfer purposes.</p>
-                    
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <h1>Features</h1>
 
                     <h2>Encryption</h2>
@@ -70,8 +92,14 @@
                     
                     <h2>Synchronization</h2>
                     <p>Optionally, multiple device synchronization can be handled through Encryptic. This can be done through Dropbox, though other services will be added in the future. Data is still encrypted before it is sent to any service, so the provider of the service should not have access to the contents of your files. Your private key is NOT synchronized to any service.</p>
+                </div>
             </div>
         </section>
 
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
     </body>
 </html>
