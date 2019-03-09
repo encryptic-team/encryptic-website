@@ -89,7 +89,7 @@
     line-height: 1.6;
     font-size: 140%;
   }
-  .info .anim-typewriter {
+  .info .anim-typewriter .line-1 {
     display: none;
   }
   .info .header-icons {
@@ -223,7 +223,7 @@
   .info .right-column h3 {
     font-size: 100%;
   }
-  .info .anim-typewriter {
+  .info .anim-typewriter .line-1 {
     display: none;
   }
   .info .header-icons {
