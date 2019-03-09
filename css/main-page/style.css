@@ -174,16 +174,16 @@ header {
   }
 }
 
-/* Type writer effect */
-.line-1 {
-  position: relative;
-  border-right: 2px solid black;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
+/* Typewriter effect */
 .anim-typewriter {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  white-space: nowrap;
+}
+.anim-typewriter .line-1 {
+  overflow: hidden;
+  border-right: 2px solid black;
   animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
 }
 
@@ -192,7 +192,7 @@ header {
     width: 0;
   }
   to {
-    width: 23em;
+    width: 100%;
   }
 }
 @keyframes blinkTextCursor {
