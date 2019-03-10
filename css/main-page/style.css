@@ -10,7 +10,6 @@
 
 html,
 body {
-  color: #000;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -31,7 +30,7 @@ body {
 /* ----- Header ----- */
 header {
   min-height: 100vh;
-  width: auto;
+  background-image: linear-gradient(to bottom right, #6965D8, #3531D8 40%);
 }
 
 /* ---- Top Menu ---- */
@@ -40,13 +39,13 @@ header {
   width: 90%;
   left: 8%;
   top: 3%;
+  color: #DDD;
 }
 .main-nav .logo-title {
   float: left;
 }
 .main-nav .logo-title img {
   width: 50px;
-  height: auto;
   float: left;
 }
 .main-nav .logo-title p {
@@ -71,7 +70,7 @@ header {
   padding: 0.5em 0.8em;
   margin: 0.2em 0;
   display: block;
-  color: black;
+  color: #DDD;
   position: relative;
   text-decoration: none;
 }
@@ -99,22 +98,22 @@ header {
 .main-nav .menu ul a:before {
   left: 0;
   top: 0;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
+  border-left: 2px solid #DDD;
+  border-top: 2px solid #DDD;
   -webkit-transform: translate(100%, 50%);
   transform: translate(100%, 50%);
 }
 .main-nav .menu ul a:after {
   right: 0;
   bottom: 0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid #DDD;
+  border-bottom: 2px solid #DDD;
   -webkit-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
 .main-nav .menu ul a:hover,
 .main-nav .menu ul .current a {
-  color: black;
+  color: white;
 }
 .main-nav .menu ul a:hover:before,
 .main-nav .menu ul .current a:before,
@@ -133,6 +132,7 @@ header {
   width: 80%;
   left: 10%;
   margin-top: 200px;
+  color: #DDD;
 }
 .info .left-column {
   margin-right: 200px;
@@ -157,7 +157,7 @@ header {
   height: 30px;
   font-size: 200%;
   margin-top: 50px;
-  color: black;
+  color: #DDD;
 }
 .info .bounce {
   animation: bounce 2s infinite;
@@ -182,7 +182,7 @@ header {
 }
 .anim-typewriter .line-1 {
   overflow: hidden;
-  border-right: 2px solid black;
+  border-right: 2px solid;
   animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
 }
 
@@ -196,7 +196,7 @@ header {
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: black;
+    border-right-color: white;
   }
   to {
     border-right-color: transparent;
@@ -205,7 +205,6 @@ header {
 /* ---- SECOND SECTION ---- */
 .section__about {
   min-height: 100vh;
-  width: auto;
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background3.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -244,15 +243,12 @@ header {
 /* ---- THIRD SECTION ---- */
 .section__markdown {
   display: inline-block;
-  height: auto;
-  width: auto;
-  margin-left: 20px;
+  padding: 0px 20px;
   align-content: center;
+  color: black;
 }
 .section__markdown .main__row {
   display: inline-block;
-  width: auto;
-  height: auto;
   padding-top: 50px;
   margin-top: 10px;
   text-align: center;
@@ -268,17 +264,14 @@ header {
 .section__markdown .main__row h1 {
   font-family: "Source Code Pro", monospace;
   font-size: 300%;
-  color: black;
   margin: 30px 0;
 }
 .section__markdown .main__row h3 {
   font-family: "Abel", sans-serif;
   font-size: 150%;
-  color: black;
   line-height: 1.5;
 }
 .section__markdown .main__row h3 .italic {
-  color: black;
   font-style: italic;
 }
 .section__markdown .second-row {
@@ -291,11 +284,11 @@ header {
 /* ---- FOURTH SECTION ---- */
 .section__contact-us {
   min-height: 50vh;
-  width: auto;
   margin: 0;
-  background-color: black;
+  background-color: #1A1A1A;
   align-content: center;
   padding-bottom: 50px;
+  color: white;
 }
 .section__contact-us .main__row {
   position: relative;
@@ -306,19 +299,16 @@ header {
 .section__contact-us .main__row h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 300%;
-  color: white;
   margin-bottom: 70px;
   text-align: center;
 }
 .section__contact-us .main__row h3 {
   font-family: "Abel", sans-serif;
   font-size: 150%;
-  color: white;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 .section__contact-us .main__row .contact-icons {
-  color: white;
   font-size: 500%;
   margin-top: 70px;
 }
@@ -332,15 +322,17 @@ header {
 }
 .section__contact-us .main__row .contact-icons .right-icon,
 .section__contact-us .main__row .contact-icons .left-icon {
-  transition: all 0.8s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .section__contact-us .main__row .contact-icons .left-icon:hover,
 .section__contact-us .main__row .contact-icons .right-icon:hover {
+  color: #4b49c1;
   transform: scale(1.2);
 }
 
 /* ---- FOOTER---- */
 footer {
+  color: black;
   display: flex;
   flex-flow: column;
   justify-content: space-between;

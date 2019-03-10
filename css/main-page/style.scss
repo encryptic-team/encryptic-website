@@ -18,7 +18,6 @@ $title-font: 'Source Code Pro', monospace;
 
 html,
 body {
-    color: #000;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -37,7 +36,7 @@ body {
 /* ----- Header ----- */
 header {
     min-height: 100vh;
-    width: auto;
+    background-image: linear-gradient(to bottom right, #6965D8, #3531D8 40%);
 }
 
 
@@ -47,13 +46,13 @@ header {
     width: 90%;
     left: 8%;
     top: 3%;
+    color: #DDD;
     
     .logo-title {
         float: left;
 
         img {
             width: 50px;
-            height: auto;
             float: left;
         }
         p {
@@ -77,7 +76,7 @@ header {
                 padding: 0.5em 0.8em;
                 margin: 0.2em 0;
                 display: block;
-                color: black;
+                color: #DDD;
                 position: relative;
                 text-decoration: none;
             }
@@ -107,8 +106,8 @@ header {
             a:before {
                 left: 0;
                 top: 0;
-                border-left: 2px solid black;
-                border-top: 2px solid black;
+                border-left: 2px solid #DDD;
+                border-top: 2px solid #DDD;
                 -webkit-transform: translate(100%, 50%);
                 transform: translate(100%, 50%);
             }
@@ -116,15 +115,15 @@ header {
             a:after {
                 right: 0;
                 bottom: 0;
-                border-right: 2px solid black;
-                border-bottom: 2px solid black;
+                border-right: 2px solid #DDD;
+                border-bottom: 2px solid #DDD;
                 -webkit-transform: translate(-100%, -50%);
                 transform: translate(-100%, -50%);
             }
 
             a:hover,
             .current a {
-                color: black;
+                color: white;
             }
 
             a:hover:before,
@@ -147,6 +146,7 @@ header {
     width: 80%;
     left: 10%;
     margin-top: 200px;
+    color: #DDD;
 
     .left-column {
         margin-right: 200px;
@@ -172,7 +172,7 @@ header {
         height: 30px;
         font-size: 200%;
         margin-top: 50px;
-        color: black;
+        color: #DDD;
     }
 
     .bounce {
@@ -196,7 +196,7 @@ header {
 .anim-typewriter {
     .line-1 {
         overflow: hidden;
-        border-right: 2px solid black;
+        border-right: 2px solid;
         animation: typewriter 4s steps(44) 1s 1 normal both,
         blinkTextCursor 700ms steps(44) infinite normal;
     }
@@ -210,7 +210,7 @@ header {
   to{width: 100%;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: black;}
+  from{border-right-color: white;}
   to{border-right-color: transparent;}
 }
 
@@ -219,7 +219,6 @@ header {
 
 .section__about {
     min-height: 100vh;
-    width: auto;
     margin: 0;
     background: linear-gradient(
         rgba(0, 0, 0, 0.3), 
@@ -267,15 +266,12 @@ header {
 
 .section__markdown {
     display: inline-block;
-    height: auto;
-    width: auto;
-    margin-left: 20px;
+	padding: 0px 20px;
     align-content: center;
+    color: black;
 
     .main__row {
         display: inline-block;
-        width: auto;
-        height: auto;
         padding-top: 50px;
         margin-top: 10px;
         text-align: center;
@@ -294,18 +290,15 @@ header {
         h1 {
             font-family: $title-font;
             font-size: 300%;
-            color: black;
             margin: 30px 0;
         }
     
         h3 {
             font-family: $normal-font;
             font-size: 150%;
-            color: black;
             line-height: 1.5;
 
             .italic {
-                color: black;
                 font-style: italic;
             }
         }
@@ -325,11 +318,11 @@ header {
 
 .section__contact-us {
     min-height: 50vh;
-    width: auto;
     margin: 0;
-    background-color: black;
+    background-color: #1A1A1A;
     align-content: center;
     padding-bottom: 50px;
+    color: white;
 
     .main__row {
         position: relative;
@@ -340,7 +333,6 @@ header {
         h1 {
             font-family: $cryptic-font;
             font-size: 300%;
-            color: white;
             margin-bottom: 70px;
             text-align: center;
         }
@@ -348,13 +340,11 @@ header {
         h3 {
             font-family: $normal-font;
             font-size: 150%;
-            color: white;
             line-height: 1.5;
             margin-bottom: 10px;
         }
 
         .contact-icons {
-            color: white;
             font-size: 500%;
             margin-top: 70px;
 
@@ -368,11 +358,12 @@ header {
 
             .right-icon,
             .left-icon {
-                transition: all .8s ease-in-out;
+                transition: all .6s ease-in-out;
             }
 
             .left-icon:hover,
             .right-icon:hover {
+            	color: #4b49c1;
                 transform: scale(1.2);
             }
         }
@@ -383,6 +374,7 @@ header {
 /* ---- FOOTER---- */
 
 footer {
+    color: black;
     display: flex;
     flex-flow: column;
     justify-content: space-between;

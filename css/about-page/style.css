@@ -10,10 +10,11 @@
 
 html,
 body {
-  color: #000;
+  color: #DDD;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-image: linear-gradient(to bottom right, #6965D8, #3531D8 40%);
 }
 
 .clearfix {
@@ -45,7 +46,7 @@ header {
 }
 .main-nav a {
   text-decoration: none;
-  color: black;
+  color: #DDD;
 }
 .main-nav .logo-title {
   float: left;
@@ -77,7 +78,7 @@ header {
   padding: 0.5em 0.8em;
   margin: 0.2em 0;
   display: block;
-  color: black;
+  color: #DDD;
   position: relative;
   text-decoration: none;
 }
@@ -105,22 +106,22 @@ header {
 .main-nav .menu ul a:before {
   left: 0;
   top: 0;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
+  border-left: 2px solid #DDD;
+  border-top: 2px solid #DDD;
   -webkit-transform: translate(100%, 50%);
   transform: translate(100%, 50%);
 }
 .main-nav .menu ul a:after {
   right: 0;
   bottom: 0;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid #DDD;
+  border-bottom: 2px solid #DDD;
   -webkit-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
 .main-nav .menu ul a:hover,
 .main-nav .menu ul .current a {
-  color: black;
+  color: white;
 }
 .main-nav .menu ul a:hover:before,
 .main-nav .menu ul .current a:before,
