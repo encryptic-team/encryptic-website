@@ -242,11 +242,10 @@ header {
 
 /* ---- THIRD SECTION ---- */
 .section__markdown {
-  background-image: linear-gradient(to bottom right, #3531D8 30%, #6965D8 90%);
   display: inline-block;
   padding: 0px 20px;
   align-content: center;
-  color: #DDD;
+  color: black;
 }
 .section__markdown .main__row {
   display: inline-block;
@@ -333,8 +332,7 @@ header {
 
 /* ---- FOOTER---- */
 footer {
-  color: #DDD;
-  background: linear-gradient(#3531D8 25%, #1d1b7c);
+  color: black;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -362,7 +360,7 @@ footer .outer_menu .menu ul a {
   padding: 0.5em 0.8em;
   margin: 0.2em 0;
   display: block;
-  color: #DDD;
+  color: black;
   position: relative;
   text-decoration: none;
 }
@@ -390,22 +388,22 @@ footer .outer_menu .menu ul a:after {
 footer .outer_menu .menu ul a:before {
   left: 0;
   top: 0;
-  border-left: 2px solid #DDD;
-  border-top: 2px solid #DDD;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
   -webkit-transform: translate(100%, 50%);
   transform: translate(100%, 50%);
 }
 footer .outer_menu .menu ul a:after {
   right: 0;
   bottom: 0;
-  border-right: 2px solid #DDD;
-  border-bottom: 2px solid #DDD;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
   -webkit-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
 footer .outer_menu .menu ul a:hover,
 footer .outer_menu .menu ul .current a {
-  color: white;
+  color: black;
 }
 footer .outer_menu .menu ul a:hover:before,
 footer .outer_menu .menu ul .current a:before,
