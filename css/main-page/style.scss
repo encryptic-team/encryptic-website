@@ -383,7 +383,9 @@ header {
 /* ---- FOOTER---- */
 
 footer {
-    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     min-height: 50vh;
 
     .outer_menu {
@@ -466,9 +468,8 @@ footer {
                     opacity: 1;
                 }
             }
+        }
     }
-    
-}
 
     .join_us {
         display: inline-block;
@@ -490,20 +491,11 @@ footer {
     }
 
     .thank_you--section {
-        position:absolute;
-        right:0;
-        bottom:0;
-        margin: 0 10px 10px 0;
+        margin: 50px 10px 10px 0;
         font-family: $normal-font;
+
+        .photo__thank {
+            float: right;
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-

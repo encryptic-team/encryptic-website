@@ -178,7 +178,6 @@ header {
 .anim-typewriter {
   display: inline-block;
   overflow: hidden;
-  width: auto;
   white-space: nowrap;
 }
 .anim-typewriter .line-1 {
@@ -342,7 +341,9 @@ header {
 
 /* ---- FOOTER---- */
 footer {
-  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   min-height: 50vh;
 }
 footer .outer_menu {
@@ -437,11 +438,11 @@ footer .join_us h1 {
   font-size: 150%;
 }
 footer .thank_you--section {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 0 10px 10px 0;
+  margin: 50px 10px 10px 0;
   font-family: "Abel", sans-serif;
+}
+footer .thank_you--section .photo__thank {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
