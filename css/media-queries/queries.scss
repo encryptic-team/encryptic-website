@@ -1,11 +1,11 @@
 /* Large screens */
-@media only screen and (min-width: 1903px) {
+@media only screen and (min-width: 1600px) {
     /* ----- Header ----- */
     .main-nav {
         .menu {
             ul {
                 li {
-                    font-size: 170%;
+                    font-size: 140%;
                 }
             }
             
@@ -18,18 +18,18 @@
         height: 300px;
         width: 80%;
         left: 10%;
-        margin-top: 200px;
+        margin-top: 300px;
     
         .left-column {
             margin-right: 200px;
             h1 {
-                font-size: 300%;
+                font-size: 270%;
                 line-height: 1.5;
             }
         }
         .right-column {
             h3 {
-                font-size: 200%;
+                font-size: 150%;
                 line-height: 1.8;
             }
             
@@ -37,7 +37,7 @@
         }
         .header-icons {
             font-size: 300%;
-            margin-top: 100px;
+            margin-top: 200px;
         }
     }
     
@@ -52,11 +52,12 @@
             
 
             h1 {
-                font-size: 400%;
+                margin-top: 150px;
+                font-size: 300%;
             }
         
             h3 {
-                font-size: 250%;
+                font-size: 200%;
             }
         }
     }
@@ -84,11 +85,9 @@
     }
 }
 
-/* Big tablets to 1200px (width smaller than the 1140px row) */
-@media only screen and (max-width: 1200px) {
 
-    
-
+@media only screen and (min-width: 1350px) {
+        
 }
 
 /* Small tablets to big tablets */

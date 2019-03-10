@@ -1,8 +1,8 @@
 /* Large screens */
-@media only screen and (min-width: 1903px) {
+@media only screen and (min-width: 1600px) {
   /* ----- Header ----- */
   .main-nav .menu ul li {
-    font-size: 170%;
+    font-size: 140%;
   }
 
   .info {
@@ -11,29 +11,30 @@
     height: 300px;
     width: 80%;
     left: 10%;
-    margin-top: 200px;
+    margin-top: 300px;
   }
   .info .left-column {
     margin-right: 200px;
   }
   .info .left-column h1 {
-    font-size: 300%;
+    font-size: 270%;
     line-height: 1.5;
   }
   .info .right-column h3 {
-    font-size: 200%;
+    font-size: 150%;
     line-height: 1.8;
   }
   .info .header-icons {
     font-size: 300%;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   .section__about .main__row h1 {
-    font-size: 400%;
+    margin-top: 150px;
+    font-size: 300%;
   }
   .section__about .main__row h3 {
-    font-size: 250%;
+    font-size: 200%;
   }
 
   .section__markdown .main__row .col__left {
@@ -43,7 +44,6 @@
     font-size: 200%;
   }
 }
-/* Big tablets to 1200px (width smaller than the 1140px row) */
 /* Small tablets to big tablets */
 @media only screen and (max-width: 1023px) {
   .logo-title {
