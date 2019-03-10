@@ -343,6 +343,7 @@ header {
 footer {
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   min-height: 50vh;
 }
 footer .outer_menu {
