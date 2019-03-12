@@ -188,13 +188,27 @@ header {
         width: 23%;
         margin-left: 100px;
         padding-bottom: 10px;
+
+        .fade-right {
+            animation: fade-right 1.5s ease-out;
+        }
     }
 
     .right-column {
-        display: block;
         margin-left: 100px;
         margin-right: 100px;
         margin-top: 50px;
+    }
+}
+
+@keyframes fade-right {
+    from{
+        opacity: 0;
+        transform: translateX(-25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

@@ -163,13 +163,25 @@ header .header-icons {
   margin-left: 100px;
   padding-bottom: 10px;
 }
+.info .left-column .fade-right {
+  animation: fade-right 1.5s ease-out;
+}
 .info .right-column {
-  display: block;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
 }
 
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /* Typewriter effect */
 .anim-typewriter {
   display: inline-block;
@@ -354,6 +366,7 @@ footer .outer_menu .menu {
   display: inline-block;
 }
 footer .outer_menu .menu * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
