@@ -23,31 +23,62 @@ body {
     scroll-behavior: smooth;
 }
 
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
-
 /* ----- Header ----- */
 header {
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, #6965D8, #3531D8 40%);
+
+    .header-icons {
+        position: absolute;
+        text-align: center;
+        color: #DDD;
+        width: 100%;
+        font-size: 200%;
+        bottom: 0;
+        margin-bottom: 20px;
+        -webkit-animation: bounce 2s infinite;
+                animation: bounce 2s infinite;
+    }
+
+    @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+                    transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+                    transform: translateY(-15px);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+                    transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+                    transform: translateY(-15px);
+        }
+    }
 }
 
 
 /* ---- Top Menu ---- */
 .main-nav {
-    position: absolute;
     width: 90%;
-    left: 8%;
-    top: 3%;
+    margin: auto;
+    padding-top: 20px;
     color: #DDD;
-    
+
     .logo-title {
         float: left;
 
@@ -55,23 +86,29 @@ header {
             width: 50px;
             float: left;
         }
+
         p {
             float: left;
             font-family: $cryptic-font;
             line-height: 4;
         }
     }
+
     .menu {
         float: right;
+
         * {
             -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+                    box-sizing: border-box;
+
             -webkit-transition: all 0.35s ease;
-            transition: all 0.35s ease;
+                    transition: all 0.35s ease;
         }
+
         ul {
             width: 100%;
             list-style-type: none;
+
             a {
                 padding: 0.5em 0.8em;
                 margin: 0.2em 0;
@@ -80,6 +117,7 @@ header {
                 position: relative;
                 text-decoration: none;
             }
+
             li {
                 float: left;
                 font-family: $normal-font;
@@ -89,7 +127,7 @@ header {
                 margin: 0 1em;
                 padding: 0;
                 -webkit-transition: all 0.35s ease;
-                transition: all 0.35s ease;
+                        transition: all 0.35s ease;
             }
 
             a:before,
@@ -99,7 +137,7 @@ header {
                 position: absolute;
                 content: '';
                 -webkit-transition: all 0.35s ease;
-                transition: all 0.35s ease;
+                        transition: all 0.35s ease;
                 opacity: 0;
             }
 
@@ -109,7 +147,7 @@ header {
                 border-left: 2px solid #DDD;
                 border-top: 2px solid #DDD;
                 -webkit-transform: translate(100%, 50%);
-                transform: translate(100%, 50%);
+                        transform: translate(100%, 50%);
             }
 
             a:after {
@@ -118,7 +156,7 @@ header {
                 border-right: 2px solid #DDD;
                 border-bottom: 2px solid #DDD;
                 -webkit-transform: translate(-100%, -50%);
-                transform: translate(-100%, -50%);
+                        transform: translate(-100%, -50%);
             }
 
             a:hover,
@@ -131,7 +169,7 @@ header {
             a:hover:after,
             .current a:after {
                 -webkit-transform: translate(0%, 0%);
-                transform: translate(0%, 0%);
+                        transform: translate(0%, 0%);
                 opacity: 1;
             }
         }
@@ -140,55 +178,37 @@ header {
 
 /* ---- Text in the header ---- */
 .info {
-    position: relative;
-    display: inline-block;
-    height: 300px;
-    width: 80%;
-    left: 10%;
-    margin-top: 200px;
+    display: flex;
     color: #DDD;
+    margin-top: 100px;
+    font-family: $cryptic-font;
+    line-height: 1.3;
 
     .left-column {
-        margin-right: 200px;
-        h1 {
-            font-family: $cryptic-font;
-            line-height: 1.3;
+        width: 23%;
+        margin-left: 100px;
+        padding-bottom: 10px;
+
+        .fade-right {
+            animation: fade-right 1.5s ease-out;
         }
     }
+
     .right-column {
-        position: relative;
-        padding: 50px 0 0 50px;
-        h3 {
-            font-family: $cryptic-font;
-            line-height: 1.3;
-        }
-
-    }
-    .header-icons {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        height: 30px;
-        font-size: 200%;
+        margin-left: 100px;
+        margin-right: 100px;
         margin-top: 50px;
-        color: #DDD;
     }
+}
 
-    .bounce {
-        animation: bounce 2s infinite;
+@keyframes fade-right {
+    from{
+        opacity: 0;
+        transform: translateX(-25%);
     }
-    
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-        }
-        40% {
-        transform: translateY(-30px);
-        }
-        60% {
-        transform: translateY(-15px);
-        }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -197,7 +217,10 @@ header {
     .line-1 {
         overflow: hidden;
         border-right: 2px solid;
-        animation: typewriter 4s steps(44) 1s 1 normal both,
+        -webkit-animation: typewriter 4s steps(44) 1s 1 normal both,
+        blinkTextCursor 700ms steps(44) infinite normal;
+
+                animation: typewriter 4s steps(44) 1s 1 normal both,
         blinkTextCursor 700ms steps(44) infinite normal;
     }
 
@@ -205,53 +228,55 @@ header {
     overflow: hidden;
     white-space: nowrap;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
+@-webkit-keyframes typewriter {
+    from{width: 0;}
+    to{width: 100%;}
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: white;}
-  to{border-right-color: transparent;}
+@keyframes typewriter {
+    from{width: 0;}
+    to{width: 100%;}
+}
+@-webkit-keyframes blinkTextCursor {
+    from{border-right-color: white;}
+    to{border-right-color: transparent;}
+}
+@keyframes blinkTextCursor {
+    from{border-right-color: white;}
+    to{border-right-color: transparent;}
 }
 
 
 /* ---- SECOND SECTION ---- */
 
 .section__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ), url(img/background3.jpg) no-repeat center center;
+
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    align-content: center;
-    overflow: hidden;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 
     .main__row {
-        position: relative;
-        width: 90%;
-        left: 10%;
-        padding-top: 50px;
-
         .right {
-            margin-left: 50px;
+            float: right;
+            margin-right: 10%;
         }
-        
-        img {
-            width: 60%;
-            margin-top: 90px;
-        }
+
         h1 {
             font-family: $title-font;
+            margin-bottom: 50px;
             font-size: 300%;
             color: white;
-            margin: 50px 0 80px 0;
         }
-    
+
         h3 {
             font-family: $normal-font;
             font-size: 150%;
@@ -266,7 +291,7 @@ header {
 
 .section__markdown {
     display: inline-block;
-	padding: 0px 20px;
+    padding: 0px 20px;
     align-content: center;
     color: black;
 
@@ -280,7 +305,7 @@ header {
         .col__left {
             padding: 40px 10px;
         }
-        
+
         img {
             width: 90%;
             margin-top: 30px;
@@ -292,7 +317,7 @@ header {
             font-size: 300%;
             margin: 30px 0;
         }
-    
+
         h3 {
             font-family: $normal-font;
             font-size: 150%;
@@ -329,14 +354,14 @@ header {
         align-content: center;
         text-align: center;
         padding-top: 50px;
-        
+
         h1 {
             font-family: $cryptic-font;
             font-size: 300%;
             margin-bottom: 70px;
             text-align: center;
         }
-    
+
         h3 {
             font-family: $normal-font;
             font-size: 150%;
@@ -358,13 +383,15 @@ header {
 
             .right-icon,
             .left-icon {
-                transition: all .6s ease-in-out;
+                -webkit-transition: all .6s ease-in-out;
+                        transition: all .6s ease-in-out;
             }
 
             .left-icon:hover,
             .right-icon:hover {
-            	color: #4b49c1;
-                transform: scale(1.2);
+                color: #4b49c1;
+                -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
             }
         }
     }
@@ -387,12 +414,12 @@ footer {
 
         .menu {
             display: inline-block;
-    
+
             * {
                 -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+                        box-sizing: border-box;
                 -webkit-transition: all 0.35s ease;
-                transition: all 0.35s ease;
+                        transition: all 0.35s ease;
             }
             ul {
                 width: 100%;
@@ -414,9 +441,9 @@ footer {
                     margin: 0 1em;
                     padding: 0;
                     -webkit-transition: all 0.35s ease;
-                    transition: all 0.35s ease;
+                            transition: all 0.35s ease;
                 }
-    
+
                 a:before,
                 a:after {
                     height: 14px;
@@ -424,39 +451,39 @@ footer {
                     position: absolute;
                     content: '';
                     -webkit-transition: all 0.35s ease;
-                    transition: all 0.35s ease;
+                            transition: all 0.35s ease;
                     opacity: 0;
                 }
-    
+
                 a:before {
                     left: 0;
                     top: 0;
                     border-left: 2px solid black;
                     border-top: 2px solid black;
                     -webkit-transform: translate(100%, 50%);
-                    transform: translate(100%, 50%);
+                            transform: translate(100%, 50%);
                 }
-    
+
                 a:after {
                     right: 0;
                     bottom: 0;
                     border-right: 2px solid black;
                     border-bottom: 2px solid black;
                     -webkit-transform: translate(-100%, -50%);
-                    transform: translate(-100%, -50%);
+                            transform: translate(-100%, -50%);
                 }
-    
+
                 a:hover,
                 .current a {
                     color: black;
                 }
-    
+
                 a:hover:before,
                 .current a:before,
                 a:hover:after,
                 .current a:after {
                     -webkit-transform: translate(0%, 0%);
-                    transform: translate(0%, 0%);
+                            transform: translate(0%, 0%);
                     opacity: 1;
                 }
             }
