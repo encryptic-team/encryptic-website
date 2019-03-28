@@ -1,0 +1,57 @@
+.about_page, .about_page body {
+    color: #DDD;
+    background-image: linear-gradient(to bottom right, #6965D8, #3531D8 40%);
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+.about_page header {
+    height: 200px;
+    width: auto;
+}
+
+/* ----------------------------------------------- */
+/* INFO */
+/* ----------------------------------------------- */
+
+.full_info {
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+    .big_title {
+        text-align: center;
+        font-family: $cryptic-font;
+        font-size: 200%;
+        margin-bottom: 100px;
+    }
+    .full_info-text {
+        font-family: $normal-font;
+
+        h1 {
+            font-family: $title-font;
+            margin-bottom: 30px;
+            font-size: 180%;
+        }
+
+        h2 {
+            font-family: $title-font;
+            font-size: 120%;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: $title-font;
+            font-size: 100%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 120%;
+            margin-bottom: 30px;
+        }
+    }
+}
