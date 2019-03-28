@@ -1,1 +1,0 @@
-sass css/about-page/style.scss:css/about-page/style.css css/main-page/style.scss:css/main-page/style.css css/media-queries/queries.scss:css/media-queries/queries.css
