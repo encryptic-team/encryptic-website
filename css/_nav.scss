@@ -1,0 +1,102 @@
+.main-nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+
+    .logo-title {
+        float: left;
+        color: #DDD;
+
+        img {
+            width: 50px;
+            float: left;
+        }
+
+        p {
+            float: left;
+            font-family: $cryptic-font;
+            line-height: 4;
+        }
+    }
+
+    .menu {
+        float: right;
+
+        * {
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+
+            -webkit-transition: all 0.35s ease;
+                    transition: all 0.35s ease;
+        }
+
+        ul {
+            width: 100%;
+            list-style-type: none;
+
+            a {
+                padding: 0.5em 0.8em;
+                margin: 0.2em 0;
+                display: block;
+                color: #DDD;
+                position: relative;
+                text-decoration: none;
+            }
+
+            li {
+                float: left;
+                font-family: $normal-font;
+                font-size: 120%;
+                overflow: hidden;
+                list-style: outside none none;
+                margin: 0 1em;
+                padding: 0;
+                -webkit-transition: all 0.35s ease;
+                        transition: all 0.35s ease;
+            }
+
+            a:before,
+            a:after {
+                height: 14px;
+                width: 14px;
+                position: absolute;
+                content: '';
+                -webkit-transition: all 0.35s ease;
+                        transition: all 0.35s ease;
+                opacity: 0;
+            }
+
+            a:before {
+                left: 0;
+                top: 0;
+                border-left: 2px solid #DDD;
+                border-top: 2px solid #DDD;
+                -webkit-transform: translate(100%, 50%);
+                        transform: translate(100%, 50%);
+            }
+
+            a:after {
+                right: 0;
+                bottom: 0;
+                border-right: 2px solid #DDD;
+                border-bottom: 2px solid #DDD;
+                -webkit-transform: translate(-100%, -50%);
+                        transform: translate(-100%, -50%);
+            }
+
+            a:hover,
+            .current a {
+                color: white;
+            }
+
+            a:hover:before,
+            .current a:before,
+            a:hover:after,
+            .current a:after {
+                -webkit-transform: translate(0%, 0%);
+                        transform: translate(0%, 0%);
+                opacity: 1;
+            }
+        }
+    }
+}

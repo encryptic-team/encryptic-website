@@ -1,0 +1,29 @@
+/* ----- Reusable items ----*/
+
+$cryptic-font: 'Major Mono Display', monospace;
+$normal-font: 'Abel', sans-serif;
+$title-font: 'Source Code Pro', monospace;
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@import 'nav';
+@import 'about';
+@import 'main-page';
+@import 'grid';
+@import 'hamburger';
+@import 'queries';
